@@ -2,8 +2,13 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/app/material.module';
-
+import { RouterTestingModule } from "@angular/router/testing";
 import { StudentsAddComponent } from './students-add.component';
+
+import {
+  HttpClientTestingModule,
+  HttpTestingController
+} from '@angular/common/http/testing';
 
 describe('Unit Testing from StudentsAddComponent', () => {
   let component: StudentsAddComponent;
@@ -15,7 +20,9 @@ describe('Unit Testing from StudentsAddComponent', () => {
       imports: [
         ReactiveFormsModule,
         MaterialModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        RouterTestingModule,
+        HttpClientTestingModule
       ]
     })
     .compileComponents();
