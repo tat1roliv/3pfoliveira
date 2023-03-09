@@ -5,6 +5,8 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { MaterialModule } from 'src/app/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
 
 describe('CoursesEditComponent', () => {
   let component: CoursesEditComponent;
@@ -13,10 +15,19 @@ describe('CoursesEditComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ CoursesEditComponent ],
-      imports: [ HttpClientTestingModule,
+      imports: [
+        HttpClientTestingModule,
         ReactiveFormsModule,
         MaterialModule,
-        BrowserAnimationsModule, ]
+        BrowserAnimationsModule,
+        HttpClientModule,
+
+    ],
+    providers: [
+        
+    ]
+
+
     })
     .compileComponents();
 
