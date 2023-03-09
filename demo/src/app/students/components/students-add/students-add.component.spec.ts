@@ -1,14 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from 'src/app/material.module';
 
 import { StudentsAddComponent } from './students-add.component';
 
-describe('StudentsAddComponent', () => {
+describe('Unit Testing from StudentsAddComponent', () => {
   let component: StudentsAddComponent;
   let fixture: ComponentFixture<StudentsAddComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StudentsAddComponent ]
+      declarations: [ StudentsAddComponent ],
+      imports: [
+        ReactiveFormsModule,
+        MaterialModule,
+        BrowserAnimationsModule
+      ]
     })
     .compileComponents();
 
@@ -17,7 +25,7 @@ describe('StudentsAddComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create this component', () => {
     expect(component).toBeTruthy();
   });
 });
