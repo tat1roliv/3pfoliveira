@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup , Validators} from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Course } from 'src/app/models/course';
 import { CourseService } from '../../services/course.service';
@@ -20,14 +20,16 @@ export class CoursesAddComponent  implements OnInit{
   ){}
 
   ngOnInit(): void {
+
     this.activatedRoute.paramMap.subscribe((parametros) => {
-      console.log(parametros);
+      //console.log(parametros);
 
       this.formCourses = new FormGroup({
         id: new FormControl(''),
         courseName: new FormControl(''),
 
       })
+
     })
 
   }
