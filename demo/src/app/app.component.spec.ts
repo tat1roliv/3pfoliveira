@@ -1,27 +1,15 @@
-import { AppComponent } from './app.component';
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { StudentsAddComponent } from './students/components/students-add/students-add.component';
-import { MaterialModule } from './material.module';
-import { ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        StudentsAddComponent
-      ],
       imports: [
-        MaterialModule,
-        ReactiveFormsModule,
-        BrowserAnimationsModule,
-        HttpClientModule,
-        HttpClientTestingModule,
-        RouterTestingModule,
+        RouterTestingModule
+      ],
+      declarations: [
+        AppComponent
       ],
     }).compileComponents();
   });

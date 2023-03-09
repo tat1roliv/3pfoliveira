@@ -1,5 +1,4 @@
 import { HttpClientModule } from '@angular/common/http';
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,10 +17,6 @@ import { StudentsModule } from './students/students.module';
 import { CourseModule } from './course/course.module';
 import { LessonModule } from './lesson/lesson.module';
 import { CoreModule } from './core/core.module';
-
-
-import { RouterTestingModule } from '@angular/router/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 @NgModule({
     declarations: [
@@ -48,9 +43,6 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
         //StudentsModule,
         //CourseModule,
         //LessonModule,
-        HttpClientModule,
-        HttpClientTestingModule,
-        RouterTestingModule,
 
     ]
 })
