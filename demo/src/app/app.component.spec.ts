@@ -2,7 +2,9 @@ import { TestBed } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+
 import { MaterialModule } from './material.module';
 
 
@@ -11,13 +13,15 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        ToolbarComponent,
+
         RouterTestingModule,
         MaterialModule,
         BrowserAnimationsModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        ToolbarComponent,
+        FooterComponent
       ],
     }).compileComponents();
   });

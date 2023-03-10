@@ -23,7 +23,7 @@
           </div>
           <div class="mb-2">
             <label class="mb-1" for="password-input">Password:</label>
-            <input value="" type="text" id="password-input" name="password-input" class="form-control" placeholder="*Password" formControlName="password_">
+            <input value="" type="password" id="password-input" name="password-input" class="form-control" placeholder="*Password" formControlName="password_">
             <!--check-->
             <div class="valid" *ngIf="formLogin.controls['password_'].dirty && formLogin.controls['password_'].valid" >accepted</div>
             <div class="invalid" *ngIf="formLogin.controls['password_'].dirty && formLogin.controls['password_'].errors?.['required']" >required field</div>

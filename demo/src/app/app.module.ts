@@ -17,7 +17,7 @@ import { StudentsModule } from './students/students.module';
 import { CourseModule } from './course/course.module';
 import { LessonModule } from './lesson/lesson.module';
 import { CoreModule } from './core/core.module';
-import { RouterModule } from '@angular/router';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -43,7 +43,6 @@ import { RouterModule } from '@angular/router';
         //StudentsModule,
         //CourseModule,
         //LessonModule,
-        RouterModule
 
     ]
 })
